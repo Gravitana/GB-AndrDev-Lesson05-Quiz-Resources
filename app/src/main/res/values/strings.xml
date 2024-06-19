@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Family Archive</string>
+    <string name="app_version" translatable="false">" 0.1"</string>
 </resources>
