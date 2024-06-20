@@ -50,5 +50,7 @@
         <item name="colorSurfaceContainerHighest">@color/quizfa_surfaceContainerHighest</item>
     </style>
 
-    <style name="Theme.QUIZFA" parent="Base.Theme.QUIZFA" />
+    <style name="Theme.QUIZFA" parent="Base.Theme.QUIZFA">
+        <item name="android:fontFamily">@font/quizopensans</item>
+    </style>
 </resources>
