@@ -1,8 +1,10 @@
 package ru.gravitana.quiz_fa
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.gravitana.quiz_fa.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,5 +17,10 @@ class MainActivity : AppCompatActivity() {
             append(" ")
             append(getString(R.string.app_version))
         }
+
+        val mp: MediaPlayer = MediaPlayer.create(this, R.raw.right_answer)
+        mp.isLooping = false
+        mp.setOnPreparedListener(MediaPlayer::start)
+        mp.setOnCompletionListener(MediaPlayer::release)
     }
 }
