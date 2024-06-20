@@ -12,11 +12,13 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.welcome.text = buildString {
-            append(getString(R.string.app_name))
-            append(" ")
-            append(getString(R.string.app_version))
-        }
+        binding.welcomeButton.text = getString(R.string.continue_button_text)
+
+//        binding.welcome.text = buildString {
+//            append(getString(R.string.app_name))
+//            append(" ")
+//            append(getString(R.string.app_version))
+//        }
 
         val mp: MediaPlayer = MediaPlayer.create(this, R.raw.right_answer)
         mp.isLooping = false
